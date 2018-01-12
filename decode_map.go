@@ -5,6 +5,7 @@ import (
 	"reflect"
 
 	"github.com/vmihailenco/msgpack/codes"
+	"errors"
 )
 
 const mapElemsAllocLimit = 1e4
@@ -237,7 +238,8 @@ func decodeStructValue(d *Decoder, v reflect.Value) error {
 				break
 			}
 			if err := f.DecodeValue(d, v); err != nil {
-				return err
+				fmt.Println(f.name)
+				return errors.New(err.Error() + " field: " + f.name)
 			}
 		}
 		// Skip extra values.
@@ -256,7 +258,8 @@ func decodeStructValue(d *Decoder, v reflect.Value) error {
 		}
 		if f := fields.Table[name]; f != nil {
 			if err := f.DecodeValue(d, v); err != nil {
-				return err
+				fmt.Println(f.name)
+				return errors.New(err.Error() + " field: " + f.name)
 			}
 		} else {
 			if err := d.Skip(); err != nil {
