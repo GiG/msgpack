@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/vmihailenco/msgpack/codes"
+	"github.com/betit/msgpack/codes"
 	"errors"
 )
 
