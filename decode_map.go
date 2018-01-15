@@ -238,7 +238,6 @@ func decodeStructValue(d *Decoder, v reflect.Value) error {
 				break
 			}
 			if err := f.DecodeValue(d, v); err != nil {
-				fmt.Println(f.name)
 				return errors.New(err.Error() + " field: " + f.name)
 			}
 		}
@@ -258,7 +257,6 @@ func decodeStructValue(d *Decoder, v reflect.Value) error {
 		}
 		if f := fields.Table[name]; f != nil {
 			if err := f.DecodeValue(d, v); err != nil {
-				fmt.Println(f.name)
 				return errors.New(err.Error() + " field: " + f.name)
 			}
 		} else {
