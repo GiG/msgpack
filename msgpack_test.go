@@ -9,7 +9,7 @@ import (
 
 	. "gopkg.in/check.v1"
 
-	"github.com/betit/msgpack"
+	"github.com/gig/msgpack"
 )
 
 type nameStruct struct {

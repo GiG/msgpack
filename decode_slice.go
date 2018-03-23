@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/betit/msgpack/codes"
+	"github.com/gig/msgpack/codes"
 )
 
 const sliceElemsAllocLimit = 1e4

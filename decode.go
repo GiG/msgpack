@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/betit/msgpack/codes"
+	"github.com/gig/msgpack/codes"
 )
 
 const bytesAllocLimit = 1024 * 1024 // 1mb
