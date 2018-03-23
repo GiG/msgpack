@@ -3,7 +3,7 @@ package msgpack_test
 import (
 	"fmt"
 
-	"github.com/betit/msgpack"
+	"github.com/gig/msgpack"
 )
 
 type customStruct struct {

@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/betit/msgpack/codes"
 	"errors"
+
+	"github.com/gig/msgpack/codes"
 )
 
 const mapElemsAllocLimit = 1e4

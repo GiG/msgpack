@@ -1,28 +1,28 @@
 # MessagePack encoding for Golang
 
 [![Build Status](https://travis-ci.org/vmihailenco/msgpack.svg?branch=v2)](https://travis-ci.org/vmihailenco/msgpack)
-[![GoDoc](https://godoc.org/github.com/betit/msgpack?status.svg)](https://godoc.org/github.com/betit/msgpack)
+[![GoDoc](https://godoc.org/github.com/gig/msgpack?status.svg)](https://godoc.org/github.com/gig/msgpack)
 
 Supports:
 - Primitives, arrays, maps, structs, time.Time and interface{}.
 - Appengine *datastore.Key and datastore.Cursor.
-- [CustomEncoder](https://godoc.org/github.com/betit/msgpack#example-CustomEncoder)/CustomDecoder interfaces for custom encoding.
-- [Extensions](https://godoc.org/github.com/betit/msgpack#example-RegisterExt) to encode type information.
+- [CustomEncoder](https://godoc.org/github.com/gig/msgpack#example-CustomEncoder)/CustomDecoder interfaces for custom encoding.
+- [Extensions](https://godoc.org/github.com/gig/msgpack#example-RegisterExt) to encode type information.
 - Renaming fields via `msgpack:"my_field_name"`.
-- Omitting individual empty fields via `msgpack:",omitempty"` tag or all [empty fields in a struct](https://godoc.org/github.com/betit/msgpack#example-Marshal--OmitEmpty).
-- [Map keys sorting](https://godoc.org/github.com/betit/msgpack#Encoder.SortMapKeys).
-- Encoding/decoding all [structs as arrays](https://godoc.org/github.com/betit/msgpack#Encoder.StructAsArray) or [individual structs](https://godoc.org/github.com/betit/msgpack#example-Marshal--AsArray).
-- Simple but very fast and efficient [queries](https://godoc.org/github.com/betit/msgpack#example-Decoder-Query).
+- Omitting individual empty fields via `msgpack:",omitempty"` tag or all [empty fields in a struct](https://godoc.org/github.com/gig/msgpack#example-Marshal--OmitEmpty).
+- [Map keys sorting](https://godoc.org/github.com/gig/msgpack#Encoder.SortMapKeys).
+- Encoding/decoding all [structs as arrays](https://godoc.org/github.com/gig/msgpack#Encoder.StructAsArray) or [individual structs](https://godoc.org/github.com/gig/msgpack#example-Marshal--AsArray).
+- Simple but very fast and efficient [queries](https://godoc.org/github.com/gig/msgpack#example-Decoder-Query).
 
-API docs: https://godoc.org/github.com/betit/msgpack.
-Examples: https://godoc.org/github.com/betit/msgpack#pkg-examples.
+API docs: https://godoc.org/github.com/gig/msgpack.
+Examples: https://godoc.org/github.com/gig/msgpack#pkg-examples.
 
 ## Installation
 
 Install:
 
 ```shell
-go get -u github.com/betit/msgpack
+go get -u github.com/gig/msgpack
 ```
 
 ## Quickstart
@@ -60,7 +60,7 @@ BenchmarkStructGOB-4                  	   10000	    104331 ns/op	   14664 B/op	 
 
 ## Howto
 
-Please go through [examples](https://godoc.org/github.com/betit/msgpack#pkg-examples) to get an idea how to use this package.
+Please go through [examples](https://godoc.org/github.com/gig/msgpack#pkg-examples) to get an idea how to use this package.
 
 ## See also
 

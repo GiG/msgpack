@@ -4,7 +4,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/betit/msgpack/codes"
+	"github.com/gig/msgpack/codes"
 )
 
 // EncodeUint encodes an uint64 in 1, 2, 3, 5, or 9 bytes.
